@@ -4,7 +4,7 @@ Css module of single purpose classes for min width scale
 
 #### Stats
 
-305 | 44 | 44
+317 | 44 | 44
 ---|---|---
 bytes | selectors | declarations
 
@@ -74,6 +74,7 @@ Running `$ npm start` will process the source css and place the built css in the
 ## The css
 
 ```css
+/* Media Queries */
 /*
    MIN WIDTH - SCALE
 */
@@ -101,7 +102,7 @@ Running `$ npm start` will process the source css and place the built css in the
  .mn-wi10-ns { min-width: 128rem; }
  .mn-wi-auto-ns { min-width: auto; }
 }
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width: 48em) and (min-width: 48em) and (max-width: 64em) {
  .mn-wi1-m { min-width: 1rem; }
  .mn-wi2-m { min-width: 2rem; }
  .mn-wi3-m { min-width: 4rem; }
@@ -114,7 +115,7 @@ Running `$ npm start` will process the source css and place the built css in the
  .mn-wi10-m { min-width: 128rem; }
  .mn-wi-auto-m { min-width: auto; }
 }
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
  .mn-wi1-l { min-width: 1rem; }
  .mn-wi2-l { min-width: 2rem; }
  .mn-wi3-l { min-width: 4rem; }
